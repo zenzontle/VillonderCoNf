@@ -1,0 +1,1 @@
+document.getElementById("intro").innerHTML = "This paragraph includes introductory information regarding the Martial Doomsday.";
