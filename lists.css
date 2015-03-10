@@ -1,3 +1,6 @@
 #list1 li {
 	color: red
 }
+#sections {
+	list-style-type: lower-roman;
+}
