@@ -1,6 +1,13 @@
 #list1 li {
 	color: red
 }
+ul li {
+	list-style-type: square;
+}
+ol li {
+	list-style-type: decimal-leading-zero;
+}
+
 #sections {
 	list-style-type: lower-roman;
 }
