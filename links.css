@@ -1,0 +1,35 @@
+body {
+	background: #fff;
+	color: #000;
+	font-size: 2em;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #0000CC;
+	border-bottom: 1px solid #0000CC;
+}
+a:visited {
+	color: #6D006D;
+	border-bottom: 1px dotted #6D006D;
+}
+a:focus {
+	color: #CC0000;
+	border-bottom: 1px dashed #CC0000;
+}
+a:hover {
+	color: #CC0000;
+	border-bottom: 1px dotted #CC0000;
+}
+a:active {
+	color: #CC0000;
+	border-bottom: 1px solid #CC0000;
+	font-style: italic;
+}
+
+a.external {
+	background: #fff url("external_icon.png") center right no-repeat;
+	padding-right: 30px;
+}

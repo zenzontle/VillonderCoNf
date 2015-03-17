@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<label>Number type: <input type="number" placeholder="7" min="1" max="10" /></label>
+	<form oninput="output.value = weight.value">
+		<label>Range type:
+			<input type="range" id="weight" />
+			<output id="output"></output>
+		</label>
+	</form>
+	<hr />
+	<input type="range" id="rangexample">
+	<input type="date" />
+	<input type="time" step="1800" />
+	<input type="color" />
+	<input type="search" placeholder="search" autofocus="" />
+
+	<input type="text" list="mydata"/>
+	<datalist id="mydata">
+		<option value="Mister" label="Mr" />
+		<option value="Mistress" label="Mrs" />
+		<option value="Miss" label="Ms" />
+	</datalist>
+	<meter value="0.5"></meter>
+</body>
+</html>

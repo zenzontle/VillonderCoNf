@@ -1,0 +1,15 @@
+#improved-form fieldset {
+	width: 40%;
+}
+#improved-form li {
+	margin: 10px;
+	list-style: none;
+}
+#improved-form input {
+	margin-left: 45px;
+	text-align: left;
+}
+#improved-form textarea {
+	margin-left: 10px;
+	text-align: left;
+}

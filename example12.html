@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function PointerDownResponse(event) {
+            document.getElementById("dvPointerStatus").innerHTML +=
+                "PointerId:" + event.pointerId +
+                " of pointerType:" + event.pointerType + " Down<br />";
+        }
+ 
+        function init() {
+            document.addEventListener("pointerdown", PointerDownResponse, false);
+ 
+            // Support for prefixed IE10 implementation
+            document.addEventListener("MSPointerDown", PointerDownResponse, false);
+        }
+    </script>
+</head>
+<body onload="init()">
+    <p>Try touching within each box with multiple fingers</p>
+    <div id="dvPointerStatus" style="float:left; width:200px;"></div>
+    <div style="float:left; background-color:orange; height:300px; width:300px">
+            Touches in this box will invoke default pan and zoom behaviors
+    </div>
+    <div style="float:left; background-color:blue; height:300px; width:300px; 
+        touch-action:none; -ms-touch-action:none;">
+            This box has touch-action set to none
+    </div>
+</body>
+</html>
