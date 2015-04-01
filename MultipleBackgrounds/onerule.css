@@ -1,0 +1,8 @@
+.sample3 .sea {
+	height: 300px;
+	width: 480px;
+	position: relative;
+	background-image: url(media/fishing.png), url(media/mermaid.png), url(media/fish.png), url(media/sea.png);
+	background-position: top right 10px, bottom left, 30px 90px, top left;
+	background-repeat: no-repeat, repeat-x;
+}
