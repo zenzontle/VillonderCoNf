@@ -97,3 +97,34 @@ function myConcat(separator) {
 }
 
 var test = myConcat(", ", "red", "orange", "blue");
+
+function Car(make, model, year) {
+	this.make = make;
+	this.model = model;
+	this.year = year;
+	this.owner = owner;
+}
+function Person(name, age, sex) {
+	this.name = name;
+	this.age = age;
+	this.sex = sex;
+}
+var rand = new Person("Rand McKinnon", 33, "M");
+var myCar = new Car("Nissan", "Tiida", 2007, rand);
+
+var Car2 = {
+	make: "Nissan",
+	model: "Tiida",
+	year: 2007
+}
+var myCar2 = Object.create(Car2);
+var myCar3 = Object.create(Car2);
+Car2.color = "red";
+
+for (var i in myCar) {
+	if (myCar.hasOwnProperty(i)) {
+		result += "myCar" + "." + i + " = " + myCar[i] + "\n";
+	}
+}
+console.log(result);
+
